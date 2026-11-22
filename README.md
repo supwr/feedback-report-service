@@ -20,13 +20,13 @@ Microsserviço worker responsável por consumir eventos de geração de relatór
 - Amazon S3 (destino do CSV)
 - Maven + JUnit 5 + Mockito
 
-## Arquitetura
+## Arquitetura da solução
 
-O serviço segue separação em camadas:
+![app_arch.png](app_arch.png)
 
-- `domain`: modelo e portas
-- `application`: DTOs e caso de uso
-- `infrastructure`: adapters AWS (Lambda, DynamoDB e S3)
+## Arquitetura limpa
+
+![img.png](img.png)
 
 ## Contrato do evento de entrada (SQS body)
 
